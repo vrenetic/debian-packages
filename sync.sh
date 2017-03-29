@@ -44,4 +44,4 @@ if ! (reprepro -b "${DIR}/repo" checkpool); then
 fi
 
 test -e /vagrant/.s3cfg || s3cmd -c /vagrant/.s3cfg --configure
-s3cmd -c /vagrant/.s3cfg --verbose --acl-public --delete-removed --cf-invalidate sync "${DIR}/repo/" s3://cargomedia-debian-packages/
+s3cmd -c /vagrant/.s3cfg --verbose --acl-public --delete-removed --cf-invalidate sync "${DIR}/repo/" s3://vrenetic-debian-packages/

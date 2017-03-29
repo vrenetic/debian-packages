@@ -8,12 +8,12 @@ Installing the packages
 -----------------------
 Install signing key:
 ```
-wget -O - http://debian-packages.cargomedia.ch/conf/signing.key | apt-key add -
+wget -O - http://debian-packages.vrenetic.io/conf/signing.key | apt-key add -
 ```
 
 Add to your `sources.list`:
 ```
-deb http://debian-packages.cargomedia.ch <codename> main
+deb http://debian-packages.vrenetic.io <codename> main
 ```
 
 Available packages
@@ -36,8 +36,8 @@ gpg --gen-key
 Export private and public key:
 ```
 mkdir -p /vagrant/keys/
-gpg --export -a 'Cargo Media' > /vagrant/keys/public.key
-gpg --export-secret-key -a 'Cargo Media' > /vagrant/keys/private.key
+gpg --export -a 'VRenetic Tech' > /vagrant/keys/public.key
+gpg --export-secret-key -a 'VRenetic Tech' > /vagrant/keys/private.key
 ```
 
 #### Building a package

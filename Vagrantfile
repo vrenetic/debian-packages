@@ -27,10 +27,10 @@ Vagrant.configure('2') do |config|
   ].join(' && ')
 
   config.vm.define 'vivid' do |vivid|
-    vivid.vm.box = 'cargomedia/ubuntu-1504-default'
+    vivid.vm.box = 'vrenetic/ubuntu-1504-default'
   end
 
   config.vm.define 'jessie' do |jessie|
-    jessie.vm.box = 'cargomedia/debian-8-amd64-default'
+    jessie.vm.box = 'vrenetic/debian-8-amd64-default'
   end
 end
